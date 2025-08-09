@@ -27,14 +27,6 @@ This project demonstrates a complete **CI/CD pipeline** for deploying a Spring B
 7. **End Users** access the application via the ECS Service endpoint (or Load Balancer).
 
 ---
-.
-├── Dockerfile.
-├── buildspec.yml.
-├── src/ # Application source code.
-├── target/ # Maven build output (JAR file).
-└── README.md.
-
----
 
 ## ⚙️ AWS Services Used
 
@@ -57,7 +49,7 @@ This project demonstrates a complete **CI/CD pipeline** for deploying a Spring B
 ### 2. **Build Stage**
 Executed by **AWS CodeBuild** using `buildspec.yml`:
 
-``
+```yaml
 version: 0.2
 phases:
   pre_build:
@@ -79,8 +71,9 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - target/springboot-aws-deploy.jar
+    - target/springboot-aws-deploy.jar 
 
+```
 
 ## 🚀 How to Deploy
 
