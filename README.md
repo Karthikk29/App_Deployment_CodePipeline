@@ -57,7 +57,7 @@ This project demonstrates a complete **CI/CD pipeline** for deploying a Spring B
 ### 2. **Build Stage**
 Executed by **AWS CodeBuild** using `buildspec.yml`:
 
-```yaml
+``
 version: 0.2
 phases:
   pre_build:
@@ -80,6 +80,7 @@ artifacts:
   files:
     - imagedefinitions.json
     - target/springboot-aws-deploy.jar
+
 
 ## 🚀 How to Deploy
 
