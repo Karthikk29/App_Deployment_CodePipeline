@@ -81,6 +81,34 @@ artifacts:
     - imagedefinitions.json
     - target/springboot-aws-deploy.jar
 
+## 🚀 How to Deploy
 
-## 📂 Project Structure
+1. **Create ECR Repository**:  
+   aws ecr create-repository --repository-name spring/demo-ecr --region eu-north-1
+
+2. **Set up ECS Cluster & Service**:  
+   - Create an ECS cluster with Fargate launch type.  
+   - Create a service and task definition.
+
+3. **Create CodePipeline**:  
+   - Source: GitHub  
+   - Build: CodeBuild (with buildspec.yml)  
+   - Deploy: ECS (Fargate)
+
+4. **Push Code to GitHub**:  
+   git add .  
+   git commit -m "Deploy Spring Boot App"  
+   git push origin main  
+
+5. Pipeline will trigger automatically and deploy to ECS.
+
+---
+
+## ✅ Key Benefits of This Setup
+
+- Fully automated CI/CD pipeline.  
+- Zero server management using Fargate.  
+- Scalable and secure deployment with IAM roles.  
+- Dockerized application for portability.
+
 
