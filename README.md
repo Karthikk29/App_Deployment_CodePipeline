@@ -28,11 +28,11 @@ This project demonstrates a complete **CI/CD pipeline** for deploying a Spring B
 
 ---
 .
-├── Dockerfile
-├── buildspec.yml
-├── src/ # Application source code
-├── target/ # Maven build output (JAR file)
-└── README.md
+├── Dockerfile.
+├── buildspec.yml.
+├── src/ # Application source code.
+├── target/ # Maven build output (JAR file).
+└── README.md.
 
 ---
 
