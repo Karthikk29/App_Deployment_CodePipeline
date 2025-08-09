@@ -10,7 +10,7 @@ This project demonstrates a complete **CI/CD pipeline** for deploying a Spring B
 
 ## 📌 Architecture Overview
 
-![Architecture Diagram](./architecture.png) <!-- Replace with your diagram image path -->
+![Architecture Diagram](./archdiag.png.png) <!-- Replace with your diagram image path -->
 
 ### Workflow:
 1. **Developer Pushes Code** → GitHub Repository.
